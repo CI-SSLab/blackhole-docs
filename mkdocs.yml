@@ -23,7 +23,7 @@ theme:
       accent: cyan
 
 extra_css:
-  - stylesheets/extra-v3.css
+  - stylesheets/extra-v4.css
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -52,6 +52,7 @@ plugins:
             Accesso: Access
             Ambiente: Environment
             Python con uv: Python with uv
+            Docker e container: Docker and containers
             Partizioni: Partitions
             Esempi di job: Job examples
 
@@ -64,6 +65,7 @@ nav:
   - Ambiente:
       - VS Code: environment/vscode.md
       - Python con uv: environment/uv.md
+      - Docker e container: environment/containers.md
   - SLURM:
       - Partizioni: slurm/partitions.md
       - Esempi di job: slurm/jobs.md

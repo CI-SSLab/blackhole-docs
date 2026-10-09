@@ -8,26 +8,33 @@ Blackhole è l'infrastruttura HPC del **Computational Intelligence and Smart Sys
 
 <div class="grid cards" markdown>
 
--   :material-console-network: **Accesso remoto**
+-   **Accesso remoto**
 
     ---
     Collegati via SSH e lavora dal tuo editor senza trasferire il progetto fuori dal cluster.
 
-    [:octicons-arrow-right-24: Guida SSH](access/ssh.md)
+    [Guida SSH](access/ssh.md)
 
--   :material-cpu-64-bit: **Risorse di calcolo**
+-   **Risorse di calcolo**
 
     ---
     Scegli la partizione CPU o GPU e invia il lavoro tramite SLURM.
 
-    [:octicons-arrow-right-24: Partizioni e job](slurm/partitions.md)
+    [Partizioni e job](slurm/partitions.md)
 
--   :material-language-python: **Ambiente riproducibile**
+-   **Ambiente riproducibile**
 
     ---
     Configura VS Code e gestisci ambienti e dipendenze Python con uv.
 
-    [:octicons-arrow-right-24: Setup Python](environment/uv.md)
+    [Setup Python](environment/uv.md)
+
+-   **Container e Docker**
+
+    ---
+    Riusa immagini Docker nei job SLURM con il runtime container approvato dal cluster.
+
+    [Guida container](environment/containers.md)
 
 </div>
 

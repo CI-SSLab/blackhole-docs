@@ -1,0 +1,37 @@
+@import url("extra-v3.css");
+
+/* Let the homepage read as a wide hero while keeping the existing cosmic panel. */
+.blackhole-hero {
+  min-height: clamp(460px, 42vw, 600px);
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
+}
+.hero-copy {
+  padding: clamp(1.75rem, 3.2vw, 3rem);
+  padding-bottom: 1rem;
+}
+.hero-copy h1 {
+  font-size: clamp(2.65rem, 4.8vw, 4.1rem);
+  line-height: .98;
+  margin: .55rem 0 1rem;
+}
+.hero-lede {
+  max-width: 35rem;
+  line-height: 1.35;
+}
+.hero-body { max-width: 35rem; }
+.hero-brand {
+  margin: 1.5rem clamp(1.75rem, 3.2vw, 3rem) 1.5rem;
+}
+@media (max-width: 900px) {
+  .blackhole-hero {
+    min-height: 0;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hero-copy {
+    padding: clamp(2rem, 6vw, 3.5rem);
+  }
+  .hero-copy h1 { font-size: clamp(2.75rem, 9vw, 4.15rem); }
+  .hero-brand {
+    margin: 1.5rem clamp(2rem, 6vw, 3.5rem);
+  }
+}
