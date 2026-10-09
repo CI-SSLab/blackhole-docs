@@ -28,3 +28,7 @@ body { background: #f6f8fc; }
 .bh-monogram { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border: 1px solid #78ddeb; border-radius: 50%; color: #78ddeb; font-weight: 700; letter-spacing: .05em; }
 .blackhole-hero + .md-content { margin-top: 1rem; }
 @media (max-width: 760px) { .blackhole-hero { grid-template-columns: 1fr; background: linear-gradient(160deg, #174a94 0%, #102c59 52%, #080d16 52%); } .hero-visual { min-height: 280px; } .hero-brand { position: static; padding: 1rem 2rem 1.5rem; grid-row: 3; background: #080d16; } }
+
+
+/* Match Material’s dark palette for readable navigation and body text. */
+body { background: var(--md-default-bg-color); }
