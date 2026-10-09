@@ -1,0 +1,12 @@
+site/
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+id_rsa*
+id_ed25519*

@@ -1,0 +1,30 @@
+:root { --bh-blue: #123d83; --bh-cyan: #47d6e8; }
+body { background: #f6f8fc; }
+.md-header { background: #07101e; }
+.md-tabs { background: #0b1830; }
+.blackhole-hero {
+  position: relative; isolation: isolate; overflow: hidden; min-height: 510px;
+  display: grid; grid-template-columns: 1fr 1fr; color: #f7fbff;
+  background: linear-gradient(110deg, #174a94 0%, #102c59 50%, #080d16 50%, #06090f 100%);
+  border-radius: 18px; margin: 1rem 0 2.5rem; box-shadow: 0 22px 70px #06132d38;
+}
+.blackhole-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; opacity: .38; background-image: radial-gradient(#d6faff 1px, transparent 1px); background-size: 53px 53px; mask-image: linear-gradient(90deg, transparent 30%, #000); }
+.hero-copy { z-index: 1; align-self: center; padding: clamp(2rem, 5vw, 5rem); }
+.hero-eyebrow { color: #87e5f2; letter-spacing: .16em; font-size: .72rem; font-weight: 700; }
+.hero-copy h1 { color: #fff; font-size: clamp(3.4rem, 6vw, 5rem); line-height: .98; margin: .7rem 0 1.4rem; letter-spacing: -.055em; }
+.hero-copy h1 span { color: #70dbea; }
+.hero-lede { color: #fff; font-size: 1.28rem; font-weight: 600; margin: 0 0 .6rem; }
+.hero-body { color: #d7e4f5; max-width: 31rem; }
+.hero-cta { display: inline-flex; gap: .75rem; align-items: center; margin-top: 1.35rem; padding: .85rem 1.15rem; color: #081321 !important; background: #72ddec; border-radius: 7px; font-weight: 700; text-decoration: none !important; }
+.hero-cta:hover { background: #b4f4fb; }
+.hero-visual { position: relative; min-height: 360px; overflow: hidden; background: radial-gradient(ellipse at 51% 55%, #233d67 0, #101c33 32%, #070b13 75%); }
+.cosmos-glow { position: absolute; width: 320px; height: 320px; left: 50%; top: 48%; transform: translate(-50%,-50%); background: radial-gradient(circle, #06101c 0 21%, #70ddeb 22%, #4a73b1 24%, #1a2844 38%, transparent 70%); filter: drop-shadow(0 0 36px #41c8e677); border-radius: 50%; }
+.cosmos-orbit { position: absolute; left: 50%; top: 48%; width: 390px; height: 120px; border: 1px solid #71ddeb8c; border-radius: 50%; transform: translate(-50%,-50%) rotate(-24deg); box-shadow: 0 0 20px #7bddee25; }
+.orbit-two { width: 430px; height: 150px; transform: translate(-50%,-50%) rotate(31deg); border-color: #98a9d27a; }
+.cosmos-core { position: absolute; left: 50%; top: 48%; width: 110px; height: 110px; transform: translate(-50%,-50%); border-radius: 50%; background: radial-gradient(circle at 36% 34%, #182239, #02050a 70%); box-shadow: 0 0 0 13px #ffffff08, 0 0 60px #42d2e855; }
+.cosmos-caption { position: absolute; bottom: 2.2rem; right: 2.4rem; color: #b7c7df; font: 600 .68rem/1.7 ui-monospace, monospace; letter-spacing: .14em; text-align: right; }
+.cosmos-caption span { color: #73deec; }
+.hero-brand { position: absolute; left: clamp(2rem, 5vw, 5rem); bottom: 1.25rem; display: flex; align-items: center; gap: 1rem; color: #d8e6f8; font-size: .72rem; line-height: 1.4; }
+.bh-monogram { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border: 1px solid #78ddeb; border-radius: 50%; color: #78ddeb; font-weight: 700; letter-spacing: .05em; }
+.blackhole-hero + .md-content { margin-top: 1rem; }
+@media (max-width: 760px) { .blackhole-hero { grid-template-columns: 1fr; background: linear-gradient(160deg, #174a94 0%, #102c59 52%, #080d16 52%); } .hero-visual { min-height: 280px; } .hero-brand { position: static; padding: 1rem 2rem 1.5rem; grid-row: 3; background: #080d16; } }
